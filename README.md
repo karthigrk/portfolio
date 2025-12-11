@@ -11,10 +11,3 @@ A seasoned Lead Frontend Developer with 14 years of extensive experience in desi
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/karthikeyangr/) 
 
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=karthigrk&theme=react&hide_border=false&include_all_commits=false&count_private=false)
-![](https://github-readme-streak-stats.herokuapp.com/?user=karthigrk&theme=react&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=karthigrk&theme=react&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-
