@@ -10,9 +10,9 @@ const WorkExpRow = (props: any) => {
           <div className="text-sm text-green-600">{jobType}</div>
         </div>
         <div className="flex flex-row items-center justify-between text-sm text-gray-500">
-          <div>{company}</div>
-          <div>{location}</div>
-          <div className="italic">
+          <div className="flex-1 ">{company}</div>
+          <div className="flex-1 text-center">{location}</div>
+          <div className="flex-1 italic text-right">
             {startDate} - {endDate}
           </div>
         </div>
@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div>
       <section>
-        <h1 className="text-2xl font-semibold text-blue-900">About Me</h1>
+        <h1 className="text-3xl font-semibold text-blue-900">About Me</h1>
         <div className="flex flex-col gap-3 py-4 text-base justify-between">
           <p>
             A seasoned Lead Frontend Developer with 14 years of extensive
@@ -45,78 +45,50 @@ const About = () => {
             within scope. Known for excellent problem-solving abilities,
             innovation, and a commitment to continuous learning and improvement.
           </p>
-          <div>
-            <div className="text-lg py-4">Specializations</div>
-            <p>
-              <span className="text-base font-semibold">Frontend:</span>
-              <span className="px-2">
-                React.js, TypeScript, Redux, Angular, AngularJS, JavaScript,
-                HTML
-              </span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">AI:</span>
-              <span className="px-2">
-                Agentic AI development, GitHub Copilot
-              </span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Styling:</span>
-              <span className="px-2">CSS3, SCSS, Bootstrap, Tailwind CSS</span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">UI Libraries:</span>
-              <span className="px-2">Custom UI Library, Material UI</span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Bundlers:</span>
-              <span className="px-2">
-                Vite, Webpack, Mono Repo with Turbo, Micro frontend with Module
-                federation
-              </span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Tesing:</span>
-              <span className="px-2">
-                Vitest, React Tesing Library, Automation on with Testcafé and
-                Cucumber
-              </span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Backend:</span>
-              <span className="px-2">Node.js, Ruby on Rails</span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Database:</span>
-              <span className="px-2">GraphQL, Mongo DB, PostgreSQL</span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Tools:</span>
-              <span className="px-2">
-                Git, Gitlab, SVN, VS Code, Postman, Web Accessibility Tools (AXE
-                dev tools), SonarQube, ESLint
-              </span>
-            </p>
-            <p>
-              <span className="text-base font-semibold">Other Skills:</span>
-              <span className="px-2">
-                RESTful APIs, CI/CD Pipelines (Jenkins, Gitlab), Cross browser
-                compatibility, Agile Development
-              </span>
-            </p>
-          </div>
         </div>
       </section>
       <section>
-        <h2 className="text-2xl font-semibold text-blue-900">
+        <h2 className="text-3xl font-semibold mt-4 text-blue-900">
           Work Experience
         </h2>
         <div className="flex flex-col gap-4 p-4">
           <WorkExpRow
+            title="Manager - Projects"
+            company="Cognizant Technology Solutions"
+            jobType="Full-time"
+            location="Texas, USA"
+            startDate="Feb 10, 2024"
+            endDate="Till Date"
+          />
+          <WorkExpRow
+            title="Manager - Projects"
+            company="Cognizant Technology Solutions"
+            jobType="Full-time"
+            location="Chennai, India"
+            startDate="Oct 27, 2021"
+            endDate="Feb 09, 2024"
+          />
+          <WorkExpRow
+            title="Technology Lead"
+            company="Wipro Limited"
+            jobType="Full-time"
+            location="Chennai, India"
+            startDate="Nov 07, 2019"
+            endDate="Oct 20, 2021"
+          />
+          <WorkExpRow
+            title="Technical Lead"
+            company="Infosys Limited"
+            jobType="Full-time"
+            location="Chennai, India"
+            startDate="May 02, 2017"
+            endDate="Oct 25, 2019"
+          />
+          <WorkExpRow
             title="Lead Software Engineer"
             company="EC Group Datasoft Pvt Ltd"
             jobType="Full-time"
-            location="Chennai"
+            location="Chennai, India"
             startDate="Jan 17, 2012"
             endDate="Apr 28, 2017"
           />
@@ -124,13 +96,25 @@ const About = () => {
             title="Software Programmer"
             company="Neoryx Technologies"
             jobType="Full-time"
-            location="Chennai"
+            location="Chennai, India"
             startDate="Oct 10, 2010"
             endDate="Dec 20, 2011"
           />
         </div>
       </section>
-      <h2 className="text-2xl font-semibold text-blue-900">Education</h2>
+      <h2 className="text-3xl font-semibold mt-4 text-blue-900">Education</h2>
+      <section>
+        <div className="flex flex-col gap-4 p-4">
+          <WorkExpRow
+            title="Bachelor in Computer Science and Engineering"
+            company="KCG College of Technology"
+            jobType="Full-time"
+            location="Chennai, India"
+            startDate="Aug 2006"
+            endDate="May 2010"
+          />
+        </div>
+      </section>
     </div>
   );
 };

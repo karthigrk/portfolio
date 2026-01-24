@@ -26,10 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen">
           <NavBar />
           <main className="w-full max-w-screen-xl h-full mx-auto mb-auto p-4 md:py-8 ">{children}</main>
           <Footer />

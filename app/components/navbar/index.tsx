@@ -29,17 +29,27 @@ const NavBar = () => {
                 Tech Stack
               </Link>
             </li>
+
+            <li>
+              <Link href="/contact" className="hover:underline me-4 md:me-6">
+                Contact
+              </Link>
+            </li>
             <li>
               <Link href="/resume" className="hover:underline me-4 md:me-6">
                 Resume
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:underline">
-                Contact
-              </Link>
+              <a
+                className="hover:underline"
+                target="_blank"
+                href="https://www.linkedin.com/in/karthikeyangr/"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </li>
-            
           </ul>
         </div>
       </div>
